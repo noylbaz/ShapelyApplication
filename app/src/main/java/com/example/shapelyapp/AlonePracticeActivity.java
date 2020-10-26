@@ -1,6 +1,7 @@
 package com.example.shapelyapp;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
@@ -17,7 +18,7 @@ public class AlonePracticeActivity extends AppCompatActivity {
     Thread t = new Thread();
     private TextView practic_TXT_seconds;
 
-
+    MediaPlayer mysound;
     private static final int HP_BAR = 100;
     private ProgressBar alone_PRB_timer;
     private final int DELAY_TIME = 5000;
@@ -85,7 +86,6 @@ public class AlonePracticeActivity extends AppCompatActivity {
                     }
                     // delay();
                     timer(30, practic_TXT_seconds);
-                    Toast.makeText(AlonePracticeActivity.this, "num++", Toast.LENGTH_SHORT).show();
                 } else {
                     finish();
                 }

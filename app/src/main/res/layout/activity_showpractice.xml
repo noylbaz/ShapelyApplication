@@ -11,13 +11,13 @@ tools:context="ShowPracticeActivity">
         android:id="@+id/showPractic_FABTN_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="44dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
         android:backgroundTint="@color/textcolor"
         android:src="@drawable/ic_arrow"
         android:tint="@color/textcolor"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/showPractic_RCV"

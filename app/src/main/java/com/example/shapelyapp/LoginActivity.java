@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -31,7 +32,6 @@ import cn.pedant.SweetAlert.SweetAlertDialog;
 
 public class LoginActivity extends AppCompatActivity {
     private EditText login_EDT_email;
-    private TextView login_TXT_error;
     private EditText login_EDT_password;
     private Button login_BTN_login;
     private  Button login_BTN_back;
@@ -107,7 +107,6 @@ public class LoginActivity extends AppCompatActivity {
 
         }
 
-
         mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
@@ -115,8 +114,8 @@ public class LoginActivity extends AppCompatActivity {
                     readCurrentUserFromDB(email);
                 } else {
                     new SweetAlertDialog(LoginActivity.this, SweetAlertDialog.ERROR_TYPE)
-                            .setTitleText("Oops...")
-                            .setContentText("Something went wrong!")
+                            .setTitleText("The password or email is incorrect")
+                            .setContentText("Try again")
                             .show();
                 }
             }
@@ -159,7 +158,6 @@ public class LoginActivity extends AppCompatActivity {
         return false;
     }
 
-
     @Override
     protected void onStart() {
         super.onStart();
@@ -168,7 +166,6 @@ public class LoginActivity extends AppCompatActivity {
             Log.i("TAG", "onStart: " + currentUser.getEmail());
         }
     }
-
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {

@@ -64,7 +64,6 @@
             android:hint="@string/age"
             android:inputType="number"
             android:digits="1234567890">
-
         </EditText>
 
         <EditText

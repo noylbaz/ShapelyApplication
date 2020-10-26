@@ -66,7 +66,6 @@ public class StepCounterActivity extends AppCompatActivity implements SensorEven
         stepCounter_BTN_CounterReset= findViewById(R.id.stepCounter_BTN_CounterReset);
         sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         stepCouner_BTN_back = findViewById(R.id.stepCouner_BTN_back);
-
     }
 
     @Override
@@ -79,8 +78,6 @@ public class StepCounterActivity extends AppCompatActivity implements SensorEven
 
     @Override
     public void onAccuracyChanged(Sensor sensor, int i) {
-
-
     }
     @Override
     protected void onResume(){

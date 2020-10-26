@@ -41,27 +41,26 @@ public class ShowPracticeActivity extends AppCompatActivity {
         recyclerView.setAdapter(exAdapter);
         findView();
 
-        exList.add(new Execrs(R.drawable.ic_ex1,"Jumping jacks ","fdklajfkldsa"));
-        exList.add(new Execrs(R.drawable.ic_ex1,"Jumping jacks ","fdklajfkldsa"));
-        exList.add(new Execrs(R.drawable.ic_ex1,"Jumping jacks ","fdklajfkldsa"));
-        exList.add(new Execrs(R.drawable.ic_ex1,"Jumping jacks ","fdklajfkldsa"));
+        exList.add(new Execrs(R.drawable.ic_ex1,"Jumping jacks ","dsdedwe"));
+        exList.add(new Execrs(R.drawable.ic_ex2,"Wall sit","ddddddddddddddd"));
+        exList.add(new Execrs(R.drawable.ic_ex3,"Push-up ","fdklajfkldsa"));
+        exList.add(new Execrs(R.drawable.ic_ex4,"Jadbominal crunch ","fdklajfkldsa"));
+        exList.add(new Execrs(R.drawable.ic_ex5,"Step-up on to chair ","fdklajfkldsa"));
+        exList.add(new Execrs(R.drawable.ic_ex6,"Squat ","fdklajfkldsa"));
+        exList.add(new Execrs(R.drawable.ic_ex7," Triceeps dip on chair","fdklajfkldsa"));
+        exList.add(new Execrs(R.drawable.ic_ex8,"Plank","fdklajfkldsa"));
+        exList.add(new Execrs(R.drawable.ic_ex9,"High kness runing to place","fdklajfkldsa"));
+        exList.add(new Execrs(R.drawable.ic_ex10,"Lungh","fdklajfkldsa"));
+        exList.add(new Execrs(R.drawable.ic_ex11,"Push-up and rotation","fdklajfkldsa"));
+        exList.add(new Execrs(R.drawable.ic_ex12,"Side plank","fdklajfkldsa"));
         exAdapter.notifyDataSetChanged();
-//        arrayList.add("Wall sit");
-//        arrayList.add("Push up");
-//        arrayList.add("Abdominal crunch");
-//        arrayList.add(" Step up on to chair");
-//        arrayList.add("Squat");
-//        arrayList.add("Triceps dip on chair");
-//        arrayList.add("High knees running to place");
-//        arrayList.add("Lunge");
-//        arrayList.add("Push up and routation");
-//        arrayList.add("Side Plank ");
+
 
 
         showPractic_FABTN_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ShowPracticeActivity.this,MenuActivity.class);
+                Intent intent = new Intent(ShowPracticeActivity.this,WorkoutActivity.class);
                 startActivity(intent);
                 finish();
             }

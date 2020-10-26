@@ -51,14 +51,6 @@
             android:background="@color/textcolor"
             android:hint="password"
             android:inputType="textPassword" />
-        <TextView
-            android:id="@+id/login_TXT_error"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:shadowColor="@color/textcolor"
-            android:textColor="@color/textcolor">
-        </TextView>
 
         <Button
             android:id="@+id/login_BTN_login"

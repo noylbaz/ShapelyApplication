@@ -66,14 +66,12 @@ public class SigninActivity extends AppCompatActivity implements AdapterView.OnI
         singin_SNR_Usertype.setAdapter(userAdapter);
         singin_SNR_Usertype.setOnItemSelectedListener(this);
 
-
         singin_BTN_singin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 RegisterUser();
             }
         });
-
 
         singin_BTN_back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,7 +80,6 @@ public class SigninActivity extends AppCompatActivity implements AdapterView.OnI
                 startActivity(intent);
             }
         });
-
 
         singin_CB_male.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -101,8 +98,6 @@ public class SigninActivity extends AppCompatActivity implements AdapterView.OnI
                 }
             }
         });
-
-
     }
 
     // Insert new user details
@@ -217,11 +212,9 @@ public class SigninActivity extends AppCompatActivity implements AdapterView.OnI
 
     private boolean checkEmptySpinner(String str, Spinner spinner) {
         if (spinner.getSelectedItem().toString().equals("user type")) {
-
             TextView errorText = (TextView) spinner.getSelectedView();
             errorText.setError("");
             errorText.setText("user type is Required. ");
-
             return true;
         }
         return false;
