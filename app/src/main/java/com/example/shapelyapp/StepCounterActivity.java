@@ -21,8 +21,6 @@
 //    private Sensor stepSensor;
 //    private boolean isCounter;
 //    int spetCount=0;
-
-//
 //    @Override
 //    protected void onCreate(Bundle savedInstanceState) {
 //        super.onCreate(savedInstanceState);
