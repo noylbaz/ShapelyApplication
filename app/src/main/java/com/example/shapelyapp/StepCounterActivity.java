@@ -1,5 +1,4 @@
 //package com.example.shapelyapp;
-//
 //import android.content.Intent;
 //import android.hardware.Sensor;
 //import android.hardware.SensorEvent;
