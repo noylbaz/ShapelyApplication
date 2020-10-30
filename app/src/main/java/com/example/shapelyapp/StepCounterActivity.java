@@ -190,7 +190,6 @@ public class StepCounterActivity extends AppCompatActivity implements SensorEven
         super.onPause();
         running = false;
         saveData(lastKnownValue);
-
     }
 
     @Override
