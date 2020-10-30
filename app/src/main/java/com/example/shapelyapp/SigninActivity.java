@@ -178,7 +178,7 @@ public class SigninActivity extends AppCompatActivity implements AdapterView.OnI
         if (checkEmptyTxt(name, singin_EDT_username, "Name ")) {
             to_return = true;
         }
-        if (checkEmptyTxt(age, singin_EDT_age, "Date of birth ")) {
+        if (checkEmptyTxt(age, singin_EDT_age, "age")) {
             to_return = true;
         }
         if (checkEmptyTxt(height, singin_EDT_height, "Height ")) {

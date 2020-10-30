@@ -34,7 +34,7 @@ public class WorkoutActivity extends AppCompatActivity {
         workout_mIMBTN_practiceAlon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(WorkoutActivity.this, AlonePracticeActivity.class);
+                Intent intent = new Intent(WorkoutActivity.this, PracticeInstructionsActivity.class);
                 startActivity(intent);
                 finish();
             }

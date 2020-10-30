@@ -98,6 +98,7 @@ package com.example.shapelyapp;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.hardware.Sensor;
@@ -117,6 +118,7 @@ import androidx.core.content.ContextCompat;
 public class StepCounterActivity extends AppCompatActivity implements SensorEventListener {
 
     private static final int PHYSICAL_ACTIVITY = 1;
+    Button  stepCouner_BTN_back;
     private TextView tv_2;
     private SensorManager sensorManager;
     private static Boolean running = true;
@@ -130,9 +132,12 @@ public class StepCounterActivity extends AppCompatActivity implements SensorEven
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_step_counter);
+
+        stepCouner_BTN_back = findViewById(R.id.stepCouner_BTN_back);
         tv_2 = findViewById(R.id.stepCounter_TXT_counter);
         Button resetButton = findViewById(R.id.stepCounter_BTN_CounterReset);
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+
         if (ContextCompat.checkSelfPermission(this,
                 Manifest.permission.ACTIVITY_RECOGNITION) == PackageManager.PERMISSION_DENIED) {
             //ask for permission
@@ -147,6 +152,14 @@ public class StepCounterActivity extends AppCompatActivity implements SensorEven
                 initCounter();
                 delta = loadData();
                 running = true;
+            }
+        });
+        stepCouner_BTN_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(StepCounterActivity.this, MenuActivity.class);
+                startActivity(intent);
+                finish();
             }
         });
     }

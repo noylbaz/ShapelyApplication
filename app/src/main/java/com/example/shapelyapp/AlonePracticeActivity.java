@@ -115,51 +115,39 @@ public class AlonePracticeActivity extends AppCompatActivity {
         switch (numOfEx) {
             case 1:
                 imgPractic.setImageResource(R.drawable.ic_ex1);
-                Toast.makeText(AlonePracticeActivity.this, "show1", Toast.LENGTH_SHORT).show();
                 break;
             case 2:
                 imgPractic.setImageResource(R.drawable.ic_ex2);
-                Toast.makeText(AlonePracticeActivity.this, "show2", Toast.LENGTH_SHORT).show();
                 break;
             case 3:
                 imgPractic.setImageResource(R.drawable.ic_ex3);
-                Toast.makeText(AlonePracticeActivity.this, "show3", Toast.LENGTH_SHORT).show();
                 break;
             case 4:
                 imgPractic.setImageResource(R.drawable.ic_ex4);
-                Toast.makeText(AlonePracticeActivity.this, "show4", Toast.LENGTH_SHORT).show();
                 break;
             case 5:
                 imgPractic.setImageResource(R.drawable.ic_ex5);
-                Toast.makeText(AlonePracticeActivity.this, "show5", Toast.LENGTH_SHORT).show();
                 break;
             case 6:
                 imgPractic.setImageResource(R.drawable.ic_ex6);
-                Toast.makeText(AlonePracticeActivity.this, "show6", Toast.LENGTH_SHORT).show();
                 break;
             case 7:
                 imgPractic.setImageResource(R.drawable.ic_ex7);
-                Toast.makeText(AlonePracticeActivity.this, "show7", Toast.LENGTH_SHORT).show();
                 break;
             case 8:
                 imgPractic.setImageResource(R.drawable.ic_ex8);
-                Toast.makeText(AlonePracticeActivity.this, "show8", Toast.LENGTH_SHORT).show();
                 break;
             case 9:
                 imgPractic.setImageResource(R.drawable.ic_ex9);
-                Toast.makeText(AlonePracticeActivity.this, "show9", Toast.LENGTH_SHORT).show();
                 break;
             case 10:
                 imgPractic.setImageResource(R.drawable.ic_ex10);
-                Toast.makeText(AlonePracticeActivity.this, "show10", Toast.LENGTH_SHORT).show();
                 break;
             case 11:
                 imgPractic.setImageResource(R.drawable.ic_ex11);
-                Toast.makeText(AlonePracticeActivity.this, "show11", Toast.LENGTH_SHORT).show();
                 break;
             case 12:
                 imgPractic.setImageResource(R.drawable.ic_ex12);
-                Toast.makeText(AlonePracticeActivity.this, "show12", Toast.LENGTH_SHORT).show();
                 break;
 
         }
